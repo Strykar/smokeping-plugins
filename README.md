@@ -18,10 +18,11 @@ DBD::Pg may need postgresql and pgsql-libs pre-installed on the master
 You may need to edit postgresql.conf & pg_hba.conf to enable access/network connectivity
 
 ___
+<img src="https://dl.dropboxusercontent.com/u/314525/PT4_DB_mini.png">
+<img src="https://dl.dropboxusercontent.com/u/314525/Slack14_DB_mini.png">
+
 <pre>
 Original author: Alex Negulescu https://github.com/alecs
 Hacked for PgSQL: Strykar https://github.com/Strykar
 With help from: fwaggle https://github.com/fwaggle
 </pre>
-
-<img src="https://dl.dropboxusercontent.com/u/314525/PT4_DB_mini.png"> 
