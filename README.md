@@ -7,10 +7,11 @@ The variables ("host"), ("user") and ("password") must be specified in order for
 
 This assumes a PgSQL version >=8 and checks for the existence of the default db named 'postgres'
 
-Earlier PgSQL versions may have to edit line 65 in <code>PgSQLLatency.pm</code> accordingly:
+Earlier PgSQL versions may have to edit line 65 in <code>PgSQLLatency.pm</code> from:
 
-<code>prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")</code>
-
+<code>("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")</code>
+to
+<code>"SELECT datname,procpid,current_query FROM pg_stat_activity ORDER BY procpid ;"</code>
 Requires perl-DBI
 
 DBD::Pg may need postgresql and pgsql-libs pre-installed on the master
