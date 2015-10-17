@@ -12,6 +12,7 @@ Earlier PgSQL versions may have to edit line 65 in <code>PgSQLLatency.pm</code> 
 `("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")`
 to
 `"SELECT datname,procpid,current_query FROM pg_stat_activity ORDER BY procpid;"`
+
 Requires perl-DBI
 
 DBD::Pg may need postgresql and pgsql-libs pre-installed on the master
