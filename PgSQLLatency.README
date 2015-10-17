@@ -1,6 +1,6 @@
 This addon integrates PgSQL latency into smokeping.
 The variables <host>, <user> and <password> must be specified in order for the probe to work.
-Assumes PgSQL version 8+
+Assumes PgSQL version >=8
 Requires perl-DBI
 Earlier PgSQL versions will have to edit line 65 in PgSQLLatency.pm:
 
