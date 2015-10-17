@@ -8,10 +8,6 @@ Earlier PgSQL versions will have to edit line 65 in PgSQLLatency.pm
 " line
 
 
-Original author: Alex Negulescu https://github.com/alecs
-Hacked for PgSQL: Strykar https://github.com/Strykar
-With help from: fwaggle https://github.com/fwaggle
-
 To add this probe to your instance, copy the raw pm file to lib/Smokeping/probes/.
 https://raw.githubusercontent.com/Strykar/smokeping-plugins/master/PgSQLLatency.pm
 
