@@ -13,7 +13,7 @@ Earlier PgSQL versions may have to edit line 65 in PgSQLLatency.pm accordingly:
 
 Requires perl-DBI
 
-DBD::Pg may need postgresql and pgsql-libs pre-installed
+DBD::Pg may need postgresql and pgsql-libs pre-installed on the master
 
 You may need to edit postgresql.conf & pg_hba.conf to enable access/network connectivity
 
