@@ -1,14 +1,14 @@
-package Smokeping::probes::SqlLatency;
+package Smokeping::probes::PgSQLLatency;
 
 =head1 301 Moved Permanently
 
 This is a Smokeping probe module. Please use the command.
 
-C<smokeping -man Smokeping::probes::SqlLatency>
+C<smokeping -man Smokeping::probes::PgSQLLatency>
 
 to view the documentation or the command
 
-C<smokeping -makepod Smokeping::probes::SqlLatency>
+C<smokeping -makepod Smokeping::probes::PgSQLLatency>
 
 to generate the POD document.
 
@@ -22,10 +22,10 @@ use DBI;
 sub pod_hash {
 		return {
 				name => <<DOC,
-Smokeping::probes::SqlLatency - MySQL latency probe for SmokePing
+Smokeping::probes::PgSQLLatency - PgSQL latency probe for SmokePing
 DOC
 				description => <<DOC,
-Integrates MySQL latency into smokeping. The variables B<host>
+Integrates PgSQL latency into smokeping. The variables B<host>
 B<user> and B<password> must be specified in order for the probe
 to work. Requires perl-DBI.
 
@@ -60,9 +60,9 @@ sub pingone ($) {
 		my @times;
 		for ( my $run = 0 ; $run < $self->pings($target) ; $run++ ) {
 		$starttime = [gettimeofday()];
-		my $dbc = DBI->connect("dbi:mysql:mysql:$host:$port", "$username", "$password")
+		my $dbc = DBI->connect("dbi:Pg:dbname=postgres;host=$host;port=$port", "$username", "$password")
 			or $self->do_debug("Can't connect to the DB: $DBI::errstr");
-		my $test = $dbc->prepare("SHOW STATUS;")
+		my $test = $dbc->prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")
 			or $self->do_debug("Connected, but can't query DB: $DBI::errstr");
 		$test->execute();
 		while(($key, $val) = $test->fetchrow_array()) {
@@ -90,14 +90,14 @@ sub targetvars {
         my $class = shift;
         return $class->_makevars($class->SUPER::targetvars, {
                 username => { _doc => "Username to connect with.",
-                            _example => "mysqluser",
+                            _example => "postgres",
                 },
                 password => { _doc => "Username's password.",
-                              _example => "mysqlpass",
+                              _example => "dbpass",
                 },
-                port => { _doc => "Remote MySQL port.",
-                          _default => 3306,
-                          _example => "3306",
+                port => { _doc => "Remote PgSQL port.",
+                          _default => 5432,
+                          _example => "5432",
                 },
         });
 }
