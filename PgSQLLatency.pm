@@ -40,7 +40,7 @@ DOC
 }
 
 #Set up syslog to write to local0
-openlog("speedtest", "nofatal, pid", "local0");
+openlog("PgSQLLatency", "nofatal, pid", "local0");
 #set to LOG_ERR to disable debugging, LOG_DEBUG to enable debugging
 setlogmask(LOG_MASK(LOG_ERR));
 
