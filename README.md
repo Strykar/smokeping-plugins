@@ -1,7 +1,7 @@
 <h1>smokeping-pgsqllatency</h1>
 Smokeping::probes::pgsqllatency
 ___
-Integrates PgSQL latency as a probe into smokeping. It's based off <a href="https://github.com/alecs/smokeping-plugins"Alecs</a> MySQL smokeping probe.
+Integrates PgSQL latency as a probe into smokeping. It's based off <a href="https://github.com/alecs/smokeping-plugins">Alecs</a> MySQL smokeping probe.
 
 The variables ("host"), ("user") and ("password") must be specified in order for the probe to work.
 
