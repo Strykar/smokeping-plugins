@@ -2,10 +2,9 @@ This addon integrates PgSQL latency into smokeping.
 The variables <host>, <user> and <password> must be specified in order for the probe to work.
 Assumes PgSQL version 8+
 Requires perl-DBI
-Earlier PgSQL versions will have to edit line 65 in PgSQLLatency.pm
+Earlier PgSQL versions will have to edit line 65 in PgSQLLatency.pm:
 
-"my $test = $dbc->prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")
-" line
+"my $test = $dbc->prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")"
 
 
 To add this probe to your instance, copy the raw pm file to lib/Smokeping/probes/.
