@@ -30,7 +30,7 @@ And the host:
 
 menu = ServerSQL
 title = ServerSQL
-probe = PgSQL
+probe = PgSQLLatency
 host = 192.168.100.20
 
 
