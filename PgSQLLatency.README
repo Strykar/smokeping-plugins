@@ -1,5 +1,5 @@
-This addon integrates PgSQL latency into smokeping. The variables <host>, <user>
-and <password> must be specified in order for the probe to work.
+This addon integrates PgSQL latency into smokeping.
+The variables <host>, <user> and <password> must be specified in order for the probe to work.
 Assumes PgSQL version 8+
 Earlier PgSQL versions will have to edit the "my $test = $dbc->prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")
 " line
