@@ -10,8 +10,10 @@ Earlier PgSQL versions may have to edit line 65 in PgSQLLatency.pm accordingly:
 
 <code>prepare("SELECT datname,pid,query FROM pg_stat_activity ORDER BY pid;")</code>
 
-Requires perl-DBI.
+Requires perl-DBI
+
 DBD::Pg may need Postgres and pgsql-libs pre-installed
+
 You may need to edit postgresql.conf & pg_hba.conf to enable access/network connectivity
 
 
