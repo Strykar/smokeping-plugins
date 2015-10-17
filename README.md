@@ -11,5 +11,5 @@ You may need to edit postgresql.conf & pg_hba.conf to enable access/network conn
 
 Original author: Alex Negulescu alecs@altlinux.org
 Hacked to PgSQL: Strykar strykar@hotmail.com
-With help from: fwaggle fwaggle@fwaggle.org
+With help from: fwaggle https://github.com/fwaggle
 </pre>
