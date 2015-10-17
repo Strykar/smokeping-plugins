@@ -24,4 +24,4 @@ Hacked for PgSQL: Strykar https://github.com/Strykar
 With help from: fwaggle https://github.com/fwaggle
 </pre>
 
-<img src="http://192.168.1.44:81/smokeping/img/Speedtest/ServerSQL/PT4_DB_mini.png"> 
+<img src="https://dl.dropboxusercontent.com/u/314525/PT4_DB_mini.png"> 
