@@ -33,6 +33,8 @@ The Probe asks the given host for status and computes query time.
 DOC
                 authors => <<'DOC',
  Alex Negulescu <alecs@altlinux.org>
+ Strykar <https://github.com/Strykar>
+ fwaggle <https://github.com/fwaggle>
 DOC
         };
 }
