@@ -5,9 +5,9 @@ Earlier PgSQL versions will have to edit the "my $test = $dbc->prepare("SELECT d
 " line
 Requires perl-DBI.
 
-Original author: Alex Negulescu <alecs@altlinux.org>
-Hacked to PgSQL: Strykar <strykar@hotmail.com>
-With help from fwaggle <fwaggle@fwaggle.org>
+Original author: Alex Negulescu https://github.com/alecs
+Hacked for PgSQL: Strykar https://github.com/Strykar
+With help from: fwaggle https://github.com/fwaggle
 
 To add this probe to your instance, copy the pm file to lib/Smokeping/probes/.
 
