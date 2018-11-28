@@ -38,8 +38,8 @@ in your syslog configuration.
 
 ___
 
-<img src="https://www.dropbox.com/s/q3gyipdxsdhyhx9/PT4_DB_mini.png">
-<img src="https://www.dropbox.com/s/vdlyg81os5krp4g/Slack14_DB_mini.png">
+![alt text](https://www.dropbox.com/s/q3gyipdxsdhyhx9/PT4_DB_mini.png)
+![alt text](https://www.dropbox.com/s/vdlyg81os5krp4g/Slack14_DB_mini.png)
 
 <pre>
 Original author: Alex Negulescu https://github.com/alecs
